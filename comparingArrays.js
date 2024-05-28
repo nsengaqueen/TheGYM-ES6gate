@@ -1,17 +1,18 @@
-function compare(arr1,arr2){
-  if(arr1.length !== arr2.length){
-  return `the arrays are not equal`
-}
-for(x1 of arr1 ){
-  for(x2 of arr2){
-      if (arr2[x2] !== x) {
-        return `false`;
-      } else {
-        return `true`;
-      }
-}
-  }
-}
 
 
+function compare() {
+const array1 = [
+  { id: 1, name: "Alice", details: { age: 30, city: "New York" } },
+  { id: 2, name: "Bob", details: { age: 25, city: "Los Angeles" } },
+];
 
+const array2 = [
+  { id: 1, name: "Alice", details: { age: 30, city: "New York" } },
+  { id: 2, name: "Bob", details: { age: 25, city: "Los Angeles" } },
+];
+
+  return JSON.stringify(array1) === JSON.stringify(array2);
+}
+
+// Example usage
+console.log(compare());
